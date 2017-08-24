@@ -7,13 +7,16 @@
         class="io.cloudnative.teamcity.WebhooksSettings"/>
 
   <bean id="WebhooksProjectTab"
+        singleton="false"
         class="io.cloudnative.teamcity.WebhooksProjectTab"/>
 
   <bean id="WebhooksListener"
+        singleton="false"
         class="io.cloudnative.teamcity.WebhooksListener"
         init-method="register"/>
 
   <bean id="WebhooksController"
+        singleton="false"
         class="io.cloudnative.teamcity.WebhooksController"
         init-method="register"/>
 </beans>
